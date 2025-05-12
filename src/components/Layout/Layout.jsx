@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import styles from './Layout.module.css';
 
 function Layout({ children }){
     return (
         <>
             <Navbar />
-            <main style={{flex:1}}> {children} </main>
+            <main className={styles.Main}> {children} </main>
             <Footer />
         </>
     )

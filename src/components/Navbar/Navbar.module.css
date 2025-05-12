@@ -1,0 +1,20 @@
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: white;
+    
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.Navbar {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}

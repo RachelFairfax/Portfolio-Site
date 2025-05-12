@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Navbar.module.css';
 
 function Navbar () {
     return (
-        <nav className="navbar">
+        <nav className={styles.Navbar}>
             <h1></h1>
             <h2>Navbar</h2>
             <ul>
