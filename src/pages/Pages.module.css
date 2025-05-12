@@ -1,0 +1,23 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Left {
+    flex:1;
+    padding: 50px;
+}
+
+.Right {
+    flex:1;
+    padding: 50px;
+}
+
+.BigText {
+    font-size: large;
+}
+
+.Photo {
+    max-width: 400px;
+    height: auto;
+}
