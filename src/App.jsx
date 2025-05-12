@@ -7,8 +7,8 @@ import './index.css';
 function App() {
 
   return (
-    <div ClassName={styles.wrapper}>
-      <Layout className={styles.content}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Layout style={{flex: 1}}>
         <h1>Welcome to my Portfolio</h1>
         <p>This is the Home page!</p>
       </Layout>
