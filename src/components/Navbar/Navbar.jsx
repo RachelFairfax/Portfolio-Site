@@ -16,5 +16,6 @@ function Navbar () {
         </nav>
     )
 }
+//Navbar is an unordered list of links with default styling removed
 
 export default Navbar;
