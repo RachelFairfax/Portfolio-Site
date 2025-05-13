@@ -1,5 +1,24 @@
 .Main {
     padding-top: 150px;
-    padding-bottom: 100%;
+    padding-bottom: 60vh;
     background-color: lightblue;
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Left, .Right {
+    flex:1;
+    padding: 50px;
+}
+
+.BigText {
+    font-size: large;
+}
+
+.Photo {
+    max-width: 400px;
+    height: auto;
 }

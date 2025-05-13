@@ -3,15 +3,12 @@
     flex-direction: row;
 }
 
-.Left {
+.Left, .Right {
     flex:1;
     padding: 50px;
 }
 
-.Right {
-    flex:1;
-    padding: 50px;
-}
+
 
 .BigText {
     font-size: large;
