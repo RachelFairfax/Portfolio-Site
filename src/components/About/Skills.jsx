@@ -7,9 +7,9 @@ function Skills(){
                 <h1>Skills</h1>
                 <div className={styles.Container}>
                 <section className={styles.Left}>
-                    <h1>Soft Skills</h1>
-                    <p>Here's a list of my soft skills:
-                        <ul>
+                    <h1 className={styles.LeftAlign}>Soft Skills</h1>
+                    <p className={styles.LeftAlign}>Here's a list of my soft skills:
+                        <ul className={styles.LeftAlign}>
                             <li>Presenting</li>
                             <li>Communication</li>
                             <li>Teamwork</li>
@@ -18,9 +18,9 @@ function Skills(){
                     </p>
                 </section>
                 <section className={styles.Right}>
-                    <h1>Competencies</h1>
-                    <p>Here's a list of the technologies I have experience in:
-                        <ul>
+                    <h1 className={styles.LeftAlign}>Competencies</h1>
+                    <p className={styles.LeftAlign}>Here's a list of the technologies I have experience in:
+                        <ul className={styles.LeftAlign}>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Tailwind CSS</li>

@@ -10,13 +10,13 @@ a:hover {
 
 }
 
-li {
+.NavbarItem {
     text-decoration: none;
     list-style: none;
     flex:1;
 }
 
-ul {
+.NavbarUl {
     padding-left: 0;
     display: flex;
 }

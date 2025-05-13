@@ -8,6 +8,7 @@ function Introduction(){
                 <div className={styles.Container}>
                 <section className={styles.Left}>
                 <h1>Introduction</h1>
+                <br/>
                 <p>Hi! I'm Rachel, a Software Engineering Degree Apprentice working for Vodafone. I have a strong preference for front-end development work, but do have some experience building backends using languages like Python, SQL and PHP. 
                     you can find evidence of this on the Projects page. <br/><br/>
 

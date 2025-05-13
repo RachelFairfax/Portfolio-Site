@@ -7,12 +7,12 @@ function Navbar () {
         <nav className={styles.Navbar}>
             <h1></h1>
             <h2>Navbar</h2>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/certifications">Certifications</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+            <ul className={styles.NavbarUl}>
+                <li className= {styles.NavbarItem}><Link to="/">Home</Link></li>
+                <li className= {styles.NavbarItem}><Link to="/about">About</Link></li>
+                <li className= {styles.NavbarItem}><Link to="/projects">Projects</Link></li>
+                <li className= {styles.NavbarItem}><Link to="/certifications">Certifications</Link></li>
+                <li className= {styles.NavbarItem}><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
     )
