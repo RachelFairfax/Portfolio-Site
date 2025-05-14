@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Introduction from '../components/About/Introduction';
 import Skills from '../components/About/Skills';
 import Timeline from '../components/About/Timeline';
+import styles from './Pages.module.css'
 
 function About() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash){
+            const section = document.querySelector(location.hash);
+            if (section) {
+                section.scrollIntoView({behavior: 'smooth'});
+            }
+        }
+    }, [location])
+
     return (
-    <>
+    <div className={styles.About}>
         <h1>About</h1>
-        <Introduction />
-        <Skills />
-        <Timeline />
-    </>
+        <section id="introduction" className={styles.Section}><Introduction /></section>
+        <section id="skills" className={styles.Section}><Skills /></section>
+        <section id="timeline" className={styles.Section}><Timeline /></section>
+    </div>
     );
 }
 

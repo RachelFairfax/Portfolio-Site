@@ -14,6 +14,7 @@ a:hover {
     text-decoration: none;
     list-style: none;
     flex:1;
+    font-size:20px;
 }
 
 .NavbarUl {
@@ -26,4 +27,31 @@ a:hover {
     color: #f1f1f1;
     position:fixed;
     width:100%;
+}
+
+.Dropdown {
+    position:relative;
+    display:inline-block;
+}
+
+.DropdownMenu {
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 4px;
+    padding-left: 0;
+}
+
+.DropdownItem {
+    list-style: none;
+    text-decoration: none;
+    text-align:center;
+    color: red;
+    display: block;
+}
+
+
+.Dropdown:hover .DropdownMenu {
+    display: block;
 }
