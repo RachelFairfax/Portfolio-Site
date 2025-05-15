@@ -28,7 +28,7 @@ const TimelineData = [
     {
         title: "Discovering Web Development",
         year: 2022,
-        description: "I learnt about HTML and CSS in Sixth Form and was immediately fascinated. It amazed me that I could create an interactive website in a notepad text editor! I decided to learn more outside of lessons, so I enrolled in an online JavaScript course. Pleased to discover that the syntax was simple and intuitive, I decided to tutor a younger student by teaching them JavaScript as a way to improve their programming skills. Later that year, they achieved the top Grade in their Computer Science GCSE.",
+        description: "I learnt about HTML and CSS in Sixth Form and was immediately fascinated. It amazed me that I could create an interactive website in a notepad text editor! I decided to learn more outside of lessons, so I enrolled in an online JavaScript course. Pleased to discover that the syntax was simple and intuitive, I decided to tutor a younger student by teaching them JavaScript as a way to improve their programming skills. Later that year, they achieved an 8 (A* equivalent grade) in their Computer Science GCSE.",
         image: JavaScriptLogo
     },
     {

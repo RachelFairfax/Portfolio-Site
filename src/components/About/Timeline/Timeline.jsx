@@ -20,26 +20,29 @@ const variants = {
 };
 
 function Timeline() {
-  const [[index, direction], setIndexDirection] = useState([0, 0]);
-  const stage = TimelineData[index];
+    const [[index, direction], setIndexDirection] = useState([0, 0]);
+    const stage = TimelineData[index];
 
-  const nextStage = () => {
-    setIndexDirection([(index + 1) % TimelineData.length, 1]);
-  };
+    const nextStage = () => {
+      if (index < TimelineData.length - 1) {
+        setIndexDirection([index + 1, 1]);
+      }
+    };
 
-  const prevStage = () => {
-    setIndexDirection([
-      (index - 1 + TimelineData.length) % TimelineData.length,
-      -1,
-    ]);
-  };
+    const prevStage = () => {
+      if (index > 0) {
+        setIndexDirection([index - 1, -1]);
+      }
+    };
 
   return (
     <div className={styles.TimelineWrapper}>
       <h1>My Programming Journey</h1>
 
       <div className={styles.StageContainer}>
-        <div className={styles.ArrowLeft} onClick={prevStage}>←</div>
+        <button onClick={prevStage} disabled={index === 0} className={`${styles.ArrowButton} ${index === 0 ? styles.Disabled : ''}`}>
+          {"<"}
+        </button>
 
         <div className={styles.StageCardWrapper}>
           <AnimatePresence mode="wait" custom={direction}>
@@ -51,7 +54,8 @@ function Timeline() {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ duration: 0.15 }}
+              transition={{ duration: 0.1 }}
+              whileHover={{ scale: 1.02 }}
             >
               <h2>{stage.year}</h2>
               <h3>{stage.title}</h3>
@@ -67,7 +71,9 @@ function Timeline() {
           </AnimatePresence>
         </div>
 
-        <div className={styles.ArrowRight} onClick={nextStage}>→</div>
+        <button onClick={nextStage} disabled={index === TimelineData.length - 1} className={`${styles.ArrowButton} ${index === TimelineData.length - 1 ? styles.Disabled : ''}`}>
+          {">"}
+        </button>
       </div>
     </div>
   );
