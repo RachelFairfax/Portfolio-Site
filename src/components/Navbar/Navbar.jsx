@@ -18,7 +18,15 @@ function Navbar () {
                     </ul>
                 </li>
                 <li className= {styles.NavbarItem}><Link to="/projects">Projects</Link></li>
-                <li className= {styles.NavbarItem}><Link to="/certifications">Certifications</Link></li>
+                <li className= {`${styles.NavbarItem} ${styles.Dropdown} `}>
+                    Qualifications ▾
+                    <ul className={styles.DropdownMenu}>
+                        <li className={styles.DropdownItem}><Link to="/qualifications#GCSEs">GCSEs</Link></li>
+                        <li className={styles.DropdownItem}><Link to="/qualifications#A-Levels">A-Levels</Link></li>
+                        <li className={styles.DropdownItem}><Link to="/qualifications#Degree">Degree</Link></li>
+                        <li className={styles.DropdownItem}><Link to="/qualifications#Certifications">Certifications</Link></li>
+                    </ul>
+                </li>
                 <li className= {styles.NavbarItem}><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>

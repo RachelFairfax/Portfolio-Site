@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Introduction from '../components/About/Introduction';
 import Skills from '../components/About/Skills';
-import Timeline from '../components/About/Timeline';
+import Timeline from '../components/About/Timeline/Timeline';
 import styles from './Pages.module.css'
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
     }, [location])
 
     return (
-    <div className={styles.About}>
+    <div>
         <h1>About</h1>
         <section id="introduction" className={styles.Section}><Introduction /></section>
         <section id="skills" className={styles.Section}><Skills /></section>

@@ -36,22 +36,25 @@ a:hover {
 
 .DropdownMenu {
     position: absolute;
+    left:50%;
+    transform: translateX(-50%);
     background-color: white;
     min-width: 160px;
     z-index: 1;
-    margin-top: 4px;
     padding-left: 0;
+    display: none;
 }
 
 .DropdownItem {
-    list-style: none;
-    text-decoration: none;
-    text-align:center;
-    color: red;
+    list-style:none;
+}
+
+.DropdownItem a {
+    background-color:black;
     display: block;
 }
 
 
-.Dropdown:hover .DropdownMenu {
+.Dropdown:hover .DropdownMenu, .DropdownMenu:hover {
     display: block;
 }
