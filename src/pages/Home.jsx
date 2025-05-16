@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Pages.module.css'
+import styles from '../components/Layout/Layout.module.css'
 import VodafonePhoto from '../assets/VodafonePhoto.jpg';
 
 function Home() {

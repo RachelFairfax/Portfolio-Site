@@ -1,6 +1,5 @@
 .Wrapper {
     text-align: center;
-    background-color: #e3f2fd;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,5 +7,4 @@
 
 .Content {
     flex: 1;
-    background-color:blue;
 }

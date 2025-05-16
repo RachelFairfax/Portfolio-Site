@@ -14,8 +14,8 @@
 .StageCard {
   background: #fff;
   padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 2rem;
+  border: 2px solid #64dafb;
   max-width: 600px;
   width: 100%;
   transition: transform 0.3s ease;
@@ -26,7 +26,7 @@
 .StageDot {
   width: 14px;
   height: 14px;
-  background: #0070f3;
+  background: #64dafb;
   border-radius: 50%;
   margin: 0 auto 1rem;
 }
@@ -40,9 +40,9 @@
 
 .ArrowButton {
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid #64dafb;
   backdrop-filter: blur(10px);
-  color: black;
+  color: #64dafb;
   font-size: 2rem;
   border-radius: 50%;
   width: 60px;
@@ -50,13 +50,11 @@
   margin: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .ArrowButton:hover:not(.Disabled) {
   transform: scale(1.1);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 1);
 }
 
 .ArrowButton:active:not(.Disabled) {

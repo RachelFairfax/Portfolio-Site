@@ -4,7 +4,7 @@ import styles from '../Layout/Layout.module.css';
 function Skills(){
     return (
             <>
-                <h1>Skills</h1>
+                <h1 className={styles.Title}>Skills</h1>
                 <div className={styles.Container}>
                 <section className={styles.Left}>
                     <h1 className={styles.LeftAlign}>Soft Skills</h1>

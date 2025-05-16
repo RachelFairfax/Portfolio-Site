@@ -16,7 +16,10 @@ function Introduction(){
                 </p>
                 </section>
                 <section className={styles.Right}>
-                    <img className={styles.Photo} src={AirsoftPhoto} alt="Me holding an Airsoft gun"/>
+                <div className={styles.PhotoContainer}>
+                    <img className={styles.Photo} src={AirsoftPhoto} alt="Me holding an Airsoft gun" />
+                    <p className={styles.HiddenCaption}>Not a real gun I promise!</p>
+                </div>
                 </section>
                 </div>
             </>  

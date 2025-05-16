@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import GCSEs from '../components/Qualifications/GCSEs';
 import ALevels from '../components/Qualifications/A-Levels';
 import Degree from '../components/Qualifications/Degree';
-import Certifications from '../components/Qualifications/Degree';
-import styles from './Pages.module.css'
+import Certifications from '../components/Qualifications/Certifications';
+import styles from '../components/Layout/Layout.module.css'
 
 function Qualifications() {
     const location = useLocation();
