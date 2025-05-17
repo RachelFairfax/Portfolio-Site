@@ -1,0 +1,13 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Title {
+    text-align: center;
+}
+
+.Left, .Right {
+    flex:1;
+    padding: 50px;
+}
