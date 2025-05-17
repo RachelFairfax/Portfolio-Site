@@ -1,6 +1,6 @@
 const qualificationsData = [
     {
-        category: GCSE,
+        category: "GCSE",
         items: [
             {
                 name: "German",
@@ -17,11 +17,11 @@ const qualificationsData = [
                 description: "Homeschooled. Was hard."
             },
             {
-                name: "German",
+                name: "Geography",
                 date: "August 2020",
-                skills: ["Language","Communication"],
+                skills: ["Literally no skills"],
                 grade: "8",
-                description: "Mr. Shobrook bla bla bla"
+                description: "Absolutely sucked. No other comments."
             },
             {
                 name: "English Language",
@@ -36,11 +36,17 @@ const qualificationsData = [
                 skills: ["Language","Communication","Analysis"],
                 grade: "8",
                 description: "Studied and analysed famous texts such as Jane Eyre and Much Ado About Nothing."
+            },
+            {
+                name: "Mathematics",
+                date: "August 2020",
+                skills: ["Problem Solving, Numeracy, Data Analysis"],
+                grade: "8",
+                description: "Solved complex algebra problems and studied statistics."
             }
         ]
-    },
-    {
-
     }
 
 ]
+
+export default qualificationsData;

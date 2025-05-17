@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Qualification.module.css'
 
-function QualificationCard({name, date, grade, description}){
+function QualificationCard({name, date, grade, description, skills, category}) {
     const [isExpanded, setIsExpanded] = useState(false);
+    const typeClass = {
+        'GCSE': 'styles.gcse',
+        'A-Level': 'styles.alevel',
+        'Degree': 'styles.degree'
+    }[category] || '';
 
     const toggleExpand = () => setIsExpanded(prev => !prev);
 
     return (
-        <div className={styles.Card} onClick={toggleExpand}>
+        <div className={`${styles.Card} ${typeClass}`}>
             <div className={styles.Header}>
                 <h1>{name}</h1>
             </div>
@@ -21,10 +27,11 @@ function QualificationCard({name, date, grade, description}){
 }
 
 QualificationCard.propTypes = {
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   grade: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired
 };
 
 export default QualificationCard;

@@ -5,17 +5,11 @@ import PropTypes from 'prop-types';
 
 function QualificationCategory({ category, items }) {
   return (
-    <section className={styles.CategorySection}>
+    <section className={styles.CategorySection}>  
       <h2 className={styles.CategoryTitle}>{category}</h2>
       <div className={styles.CardGrid}>
         {items.map((item, index) => (
-          <QualificationCard
-            key={index}
-            name={item.name}
-            grade={item.grade}
-            date={item.date}
-            description={item.description}
-          />
+        <QualificationCard key={index} {...item} category={category} />
         ))}
       </div>
     </section>

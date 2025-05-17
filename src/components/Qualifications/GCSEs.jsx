@@ -5,7 +5,6 @@ import qualificationsData from './QualificationsData';
 function QualificationsPage() {
   return (
     <main>
-      <h1>My Qualifications</h1>
       {qualificationsData.map((section, index) => (
         <QualificationCategory
           key={index}
