@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import GCSEs from '../components/Qualifications/GCSEs';
-import ALevels from '../components/Qualifications/A-Levels';
-import Degree from '../components/Qualifications/Degree';
-import Certifications from '../components/Qualifications/Certifications';
-import styles from '../components/Layout/Layout.module.css'
+import QualificationCategory from '../components/Qualifications/QualificationCategory';
+import qualificationsData from '../components/Qualifications/QualificationsData';
+import styles from '../components/Layout/Layout.module.css';
 
 function Qualifications() {
     const location = useLocation();
@@ -19,13 +17,18 @@ function Qualifications() {
     }, [location])
 
     return (
-    <div>
-        <h1>Qualifications</h1>
-        <section id="GCSEs" className={styles.Section}><GCSEs /></section>
-        <section id="A-Levels" className={styles.Section}><ALevels /></section>
-        <section id="Degree" className={styles.Section}><Degree /></section>
-        <section id="Certifications" className={styles.Section}><Certifications /></section>
-    </div>
+        <div>
+            <h1 className={styles.Title}>Qualifications</h1>
+            <main>
+            {qualificationsData.map((section, index) => (
+                <QualificationCategory
+                key={index}
+                category={section.category}
+                items={section.items}
+                />
+            ))}
+            </main>
+        </div>
     );
 }
 

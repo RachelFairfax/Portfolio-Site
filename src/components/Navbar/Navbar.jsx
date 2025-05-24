@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { TbSchool } from "react-icons/tb";
 import { RiInformation2Line } from "react-icons/ri";
 import { GoProjectRoadmap } from "react-icons/go";
@@ -9,12 +9,20 @@ import { MdOutlinePhone } from "react-icons/md";
 
 function Navbar() {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   const isActive = (path) => location.pathname === path || location.hash.startsWith(path);
 
   return (
     <nav className={styles.Navbar}>
-      <ul className={styles.NavbarUl}>
+      <div className={styles.NavbarMobileHeader}>
+        <button onClick={toggleMenu} className={styles.Hamburger}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
+      <ul className={`${styles.NavbarUl} ${isOpen ? styles.ShowMenu : ''}`}>
         <li className={styles.NavbarItem}>
           <Link to="/" className={`${styles.NavbarLink} ${isActive('/') ? styles.active : ''}`}><FaHome className={styles.NavIcon}/>Home</Link>
         </li>

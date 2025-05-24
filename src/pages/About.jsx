@@ -19,7 +19,7 @@ function About() {
 
     return (
     <div>
-        <h1>About</h1>
+        <h1 className={styles.Title}>About</h1>
         <section id="introduction" className={styles.Section}><Introduction /></section>
         <section id="skills" className={styles.Section}><Skills /></section>
         <section id="timeline" className={styles.Section}><Timeline /></section>

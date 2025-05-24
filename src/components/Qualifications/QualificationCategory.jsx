@@ -4,16 +4,25 @@ import styles from './Qualification.module.css';
 import PropTypes from 'prop-types';
 
 function QualificationCategory({ category, items }) {
-  return (
-    <section className={styles.CategorySection}>  
-      <h2 className={styles.CategoryTitle}>{category}</h2>
-      <div className={styles.CardGrid}>
-        {items.map((item, index) => (
-        <QualificationCard key={index} {...item} category={category} />
-        ))}
-      </div>
-    </section>
-  );
+    //For auto-scroll navigation and changing card colour based on type of Qualification 
+    const typeName = {
+        GCSE: "GCSEs",
+        'A-Level': "A-Levels",
+        Degree: "Degree",
+        Certification: "Certifications"
+    }[category] || '';
+
+
+    return (
+        <section className={styles.CategorySection} id={typeName}>  
+        <h2 className={styles.CategoryTitle}>{typeName}</h2>
+        <div className={styles.CardGrid}>
+            {items.map((item, index) => (
+            <QualificationCard key={index} {...item} category={category} />
+            ))}
+        </div>
+        </section>
+    );
 }
 
 QualificationCategory.propTypes = {

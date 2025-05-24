@@ -100,7 +100,9 @@
 
 /* Dropdown items */
 .DropdownItem {
-  list-style: none;
+    list-style: none;
+    padding-left:0px;
+    padding-right:0px;
 }
 
 .DropdownItem a {
@@ -115,4 +117,96 @@
 .DropdownItem a:hover {
   background-color: #f0f0f0;
   color: #64dafb;
+}
+/* Hamburger button styles */
+.Hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  z-index: 101;
+  color: #333;
+}
+
+/* Flex wrapper for mobile */
+.NavbarMobileHeader {
+  display: none;
+  justify-content: flex-start; /* aligned left */
+  width: 100%;
+}
+
+/* Responsive: show hamburger and sidebar menu */
+@media (max-width: 1050px) {
+  .Hamburger {
+    display: block;
+    position: relative;
+    top: 5px;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+  }
+
+  .NavbarUl {
+    display: none;
+    flex-direction: column;
+    width: 250px;
+    background-color: white;
+    border-right: 2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
+    padding: 1rem 0;
+    position: fixed;
+    top: 60px; /* or however tall your navbar header is */
+    left: 0;
+    height: 100vh;
+    z-index: 50;
+    overflow-y: auto;
+  }
+
+  .ShowMenu {
+    display: flex !important;
+  }
+
+  .NavbarMobileHeader {
+    display: flex;
+  }
+
+  .NavbarItem {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .DropdownMenu {
+    position: static;
+    transform: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 1rem;
+    display: none;
+  }
+
+  .Dropdown:hover .DropdownMenu,
+  .Dropdown:focus-within .DropdownMenu {
+    display: block;
+  }
+
+  .DropdownItem a {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Optional: overlay when menu is open */
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 50;
 }

@@ -6,8 +6,6 @@ function SectionLayout({ title, leftContent, rightContent }) {
     return(
         <div className={styles.Container}>
             <section className={styles.Left}>
-                <h1 className={styles.Title}>{title}</h1>
-                <br />
                 {leftContent}
             </section>
             <section className={styles.Right}>
