@@ -1,0 +1,14 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 35px 200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.Left, .Right {
+    padding: 0 20px;
+}

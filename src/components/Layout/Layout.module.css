@@ -1,5 +1,169 @@
 .Main {
-    padding-top: 150px;
-    padding-bottom: 100%;
-    background-color: lightblue;
+}
+
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+
+.Title {
+    text-align:center;
+}
+
+.Name {
+    font-size: 75px;
+    font-weight: 900;
+    margin:0;
+}
+
+.BigText {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top:10px;
+    margin-bottom: 50px;
+}
+
+.SmallText{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.HiddenCaption {
+    display: none;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+
+.Photo {
+    height: auto;
+    max-height: 400px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.Photo:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(0.98);
+}
+
+.PhotoContainer {
+    display: inline-block;
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+.PhotoContainer:hover .HiddenCaption {
+    display: block;
+}
+
+.LeftAlign {
+    text-align:left;
+}
+
+.Button {
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    margin:10px;
+    background:transparent;
+    border: 2px solid black;
+    transition: all 0.3s ease;
+}
+
+.Button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/*Contact styles*/
+
+.ContactPage {
+  padding: 2rem 15rem;
+  text-align: center;
+  color: #111827;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ContactPage h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ContactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.ContactForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ContactForm label {
+  text-align: left;
+  font-weight: 500;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 90%;
+  padding:0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.ContactForm button {
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ContactForm button:hover {
+  background-color: #333;
+}
+
+.ContactInfo {
+  text-align: left;
+  max-width: 320px;
+}
+
+.ContactInfo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.SocialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.SocialIcons {
+    color: black;
+    width: 32px;
+    height: 32px;
+}
+
+.SocialIcons:hover{
+    color: grey;
 }
