@@ -15,7 +15,7 @@ const qualificationsData = [
                 from: "Stroud High School",
                 date: "August 2020",
                 skills: ["Language","Communication"],
-                grade: "8",
+                grade: "8",  
                 description: "Homeschooled. Was hard."
             },
             {
@@ -25,6 +25,7 @@ const qualificationsData = [
                 skills: ["Literally no skills"],
                 grade: "7",
                 description: "Absolutely sucked. No other comments."
+                //plz change this
             },
             {
                 name: "English Language",
@@ -81,6 +82,7 @@ const qualificationsData = [
                 skills: ["Data Analysis", "Problem Solving", "Numeracy"],
                 grade: "8",
                 description: "Ooooooooo pathogens"
+                //please change this
             }
         ]
     },
