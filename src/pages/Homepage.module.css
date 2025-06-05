@@ -18,7 +18,7 @@
     justify-content: center;
     position: absolute;
     top: 150px;
-    left: 320px;
+    left: 310px;
     background-color: #F4ece6;
     padding: 40px 0px 0px 0px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
@@ -48,10 +48,11 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   font-weight: 200;
 }
 
+/*Container for social icons*/
 .socialIcons {
   margin-top: auto;
   display: flex;
@@ -60,8 +61,19 @@
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 1.5rem;
-  font-size: 1.5rem;
   background-color: white;
+  color: gray;
+  transition: all 0.2s ease;
+}
+
+/*Individual social icons*/
+.socialIcon {
+  font-size: 1.7rem;
+  color: gray;
+  transition: all 0.2s ease;
+}
+
+.socialIcon:hover {
   color: black;
 }
 
