@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionLayout from '../../components/SectionLayout/SectionLayout';
 import styles from '../Layout/Layout.module.css';
-import AirsoftPhoto from '../../assets/AirsoftPhoto.jpg';
 
 function Introduction(){
     const leftContent = (
@@ -14,7 +13,7 @@ function Introduction(){
 
     const rightContent = (                
         <div className={styles.PhotoContainer}>
-            <img className={styles.Photo} src={AirsoftPhoto} alt="Me holding an Airsoft gun" />
+            <img className={styles.Photo} alt="Me holding an Airsoft gun" />
             <p className={styles.HiddenCaption}>Not a real gun I promise!</p>
         </div>)
 

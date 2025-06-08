@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Introduction from '../components/About/Introduction';
 import Skills from '../components/About/Skills';
 import Timeline from '../components/About/Timeline/Timeline';
-import styles from '../components/Layout/Layout.module.css'
+import styles from '../components/Layout/Layout.module.css';
 
 function About() {
     const location = useLocation();

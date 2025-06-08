@@ -1,8 +1,8 @@
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
-      font-weight: 600;
+  font-weight: 600;
 }
 
 .leftSide {
@@ -17,8 +17,8 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 150px;
-    left: 310px;
+    top: 22%;
+    left: 23%;
     background-color: #F4ece6;
     padding: 40px 0px 0px 0px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
@@ -81,7 +81,8 @@
   flex: 1;
   max-width: 400px;
   padding-top: 120px;
-  padding-left: 70px;
+  padding-left: 80px;
+  margin-bottom: 100px;
 }
 
 .Name {
@@ -99,24 +100,35 @@
   margin-bottom: 2rem;
 }
 
-.primary {
-  background-color: #64dafb;
-  border: none;
-  padding: 0.6rem 1.5rem;
-  color: white;
+/*Styling buttons*/
+.primary, .secondary {
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: #64dafb;
+  border: 2px solid #64dafb;
+  color: white;
+}
+
+.primary:hover {
+  background-color: white;
+  color: #64dafb;
 }
 
 .secondary {
   background-color: transparent;
   border: 2px solid #64dafb;
   color: #64dafb;
-  padding: 0.6rem 1.5rem;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
+}
+
+.secondary:hover {
+  background-color: #64dafb;
+  color: white;
 }
 
 .description {

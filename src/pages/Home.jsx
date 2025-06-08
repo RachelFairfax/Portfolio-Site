@@ -27,7 +27,7 @@ const HomePage = () => {
             <a href="https://www.linkedin.com/in/rachel-fairfax-510b62356/" className={styles.socialIcon}>
             <FaLinkedin />
             </a>
-            <a href="fairfaxr1@gmail.com" className={styles.socialIcon}>
+            <a href="mailto:fairfaxr1@gmail.com" className={styles.socialIcon}>
             <MdEmail />
             </a>
         </div>
@@ -45,7 +45,7 @@ const HomePage = () => {
           <button className={styles.secondary} onClick={() => navigate('/contact')}>Contact</button>
         </div>
         <p className={styles.description}>
-          I created this site to showcase my HTML, CSS and React skills as well as to display my qualifications and past projects.
+          I created this site to showcase my HTML, CSS and React skills as well as to display my qualifications and past projects. <br/><br/> Some highlights of this site include an interactive timeline built using the useState() hook, and the responsive navbar with icons and dropdowns.
         </p>
       </div>
     </div>
