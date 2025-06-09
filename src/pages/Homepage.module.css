@@ -1,28 +1,38 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout Container */
 .container {
   display: flex;
-  min-height: 100vh;
+  flex-direction: column;
   font-family: sans-serif;
   font-weight: 600;
+  min-height: 100vh;
 }
 
+/* LEFT SIDE */
 .leftSide {
   background-color: #629460;
-  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
+  padding-top: 5rem;
 }
 
+/* Profile Card */
 .PersonCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 22%;
-    left: 23%;
-    background-color: #F4ece6;
-    padding: 40px 0px 0px 0px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
+  background-color: #f4ece6;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding-top: 2rem;
 }
 
 .PersonCard:hover {
@@ -38,35 +48,32 @@
 }
 
 .halfBorder {
-    width: 20%;
-    align-self: center;
-    border-top: 2px solid #64dafb
+  margin: 1rem auto 0.5rem;
+  width: 20%;
+  border-top: 2px solid #64dafb;
+  padding-bottom: 1rem;
 }
 
 .title {
-  margin-top: 1rem;
   font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-bottom: 1rem;
   font-weight: 200;
+  margin-bottom: 2rem;
 }
 
-/*Container for social icons*/
+/* Social icons container */
 .socialIcons {
-  margin-top: auto;
+  margin-top: 1rem;
   display: flex;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content: center;
   gap: 1.5rem;
+  padding: 10px 0;
   background-color: white;
   color: gray;
-  transition: all 0.2s ease;
 }
 
-/*Individual social icons*/
+/* Social icon links */
 .socialIcon {
   font-size: 1.7rem;
   color: gray;
@@ -77,16 +84,18 @@
   color: black;
 }
 
+/* RIGHT SIDE */
 .rightContent {
   flex: 1;
-  max-width: 400px;
-  padding-top: 120px;
-  padding-left: 80px;
-  margin-bottom: 100px;
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align:center;
+  padding-bottom: 100px;
 }
 
 .Name {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
@@ -96,17 +105,26 @@
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  margin: 1.5rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;         /* allow wrap on smaller screens */
+  width: fit-content;
 }
 
-/*Styling buttons*/
-.primary, .secondary {
+/* Buttons */
+.primary,
+.secondary {
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
   padding: 0.6rem 1.5rem;
   transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 .primary {
@@ -134,4 +152,39 @@
 .description {
   color: #555;
   line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Responsive layout for larger screens */
+@media screen and (min-width: 1250px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .leftSide {
+    width: 38%;
+    min-height: 100vh;
+  }
+
+  .PersonCard {
+    position:absolute;
+    left: 250px;
+    top: 130px;
+  }
+
+  .rightContent {
+    padding-right: 250px;
+    padding-top: 150px;
+    padding-left: 90px;
+    text-align: left;
+    margin:0;
+  }
+
+  .buttons {
+    margin: 1.5rem 0;
+  }
+
+  .Name {
+    font-size: 5rem;
+  }
 }
