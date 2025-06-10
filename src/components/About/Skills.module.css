@@ -16,6 +16,7 @@
 
 .Subtitle {
     font-size: 20px;
+    padding-bottom: 1rem; 
 }
 
 .Left, .Right {
@@ -23,6 +24,7 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
+    overflow-x: hidden;
 }
 
 .Left {
@@ -47,4 +49,46 @@
 
 .Item:hover {
     transform: translateX(8px);
+}
+
+.ScrollingImages {
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    /*Hiding scrollbar on various browsers*/
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ScrollingImages::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.LogosRow {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    min-width: max-content;
+}
+
+.Logo {
+    width: 170px;
+    height: auto;
+    transition: all 0.3s ease;
+    flex: 1;
+    object-fit: cover;
+    /*For faded effect when not selected*/
+    opacity: 1;
+    filter: none;
+}
+
+.Logo:hover {
+    transform: scale(1.1);
+}
+
+.Faded {
+    opacity: 0.3;
+    filter: grayscale(100%);
 }
