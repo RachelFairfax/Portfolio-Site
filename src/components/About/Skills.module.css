@@ -1,0 +1,50 @@
+.Container {
+    padding: 100px 0px 100px;
+}
+
+.Body {
+    display: flex;
+}
+
+.Title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top:10px;
+    margin-bottom: 50px;
+}
+
+.Subtitle {
+    font-size: 20px;
+}
+
+.Left, .Right {
+    flex: 1;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.Left {
+    background-color: #629460;
+    color: white;
+}
+
+.Right {
+      background-color: #f4ece6;
+}
+
+.List {
+    padding-left: 1rem;
+}
+
+.Item {
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.Item:hover {
+    transform: translateX(8px);
+}

@@ -1,39 +1,45 @@
 import React from 'react';
 import SectionLayout from '../SectionLayout/SectionLayout'
-import styles from '../Layout/Layout.module.css';
+import styles from './Skills.module.css';
 
 
 function Skills(){
-    const leftContent = (       
-                        <>       
-                            <h1 className={styles.LeftAlign}>Soft Skills</h1>
-                            <p className={styles.LeftAlign}>Here's a list of my soft skills:</p>
-                                <ul className={styles.LeftAlign}>
-                                    <li>Presenting</li>
-                                    <li>Communication</li>
-                                    <li>Teamwork</li>
-                                    <li>Initiative</li>
+    return (
+                        <section className={styles.Container}>   
+                            <h1 className={styles.Title}>Skills</h1>
+                            <section className={styles.Body}> 
+                                <section className={styles.Left}>  
+                                <p className={styles.Subtitle}>My Soft Skills:</p>
+                                <ul className = {styles.List}>
+                                    <li className={styles.Item}>Presenting</li>
+                                    <li className={styles.Item}>Communication</li>
+                                    <li className={styles.Item}>Teamwork</li>
+                                    <li className={styles.Item}>Initiative</li>
+                                    <li className={styles.Item}>Stakeholder Engagement</li>
                                 </ul>
-                        </>
-                        );
+                                </section>
+                                <br></br>
+                                <section className={styles.Right}>
+                                <p className={styles.Subtitle}>My Competencies:</p>
+                                <ul className={styles.List}>
+                                    <li className={styles.Item}>HTML</li>
+                                    <li className={styles.Item}>CSS</li>
+                                    <li className={styles.Item}>Tailwind CSS</li>
+                                    <li className={styles.Item}>JavaScript</li>
+                                    <li className={styles.Item}>TypeScript</li>
+                                    <li className={styles.Item}>Python</li>
+                                    <li className={styles.Item}>SQL</li>
+                                    <li className={styles.Item}>Jira</li>
+                                    <li className={styles.Item}>VSCode</li>
+                                    <li className={styles.Item}>GitHub</li>
+                                </ul>
+                                </section>
+                                <section className={styles.ScrollingImages}>
 
-    const rightContent = (
-                        <>
-                            <br></br>
-                            <h1 className={styles.LeftAlign}>Competencies</h1>
-                            <p className={styles.LeftAlign}>Here's a list of the technologies I have experience in:</p>
-                            <ul className={styles.LeftAlign}>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Tailwind CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>Python</li>
-                                <li>SQL</li>
-                            </ul>
-                        </>
-    )
-    return <SectionLayout title="" leftContent={leftContent} rightContent={rightContent}/>;
+                                </section>
+                            </section>
+                        </section>
+    );
 }
 
 export default Skills;
