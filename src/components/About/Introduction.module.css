@@ -1,0 +1,17 @@
+.Section {
+    display: flex;
+}
+
+.Photo {
+    width: 400px;
+    height: auto;
+    padding: 40px;
+}
+
+.Words {
+    padding: 40px;
+}
+
+.SmallText {
+    padding-top: 40px;
+}

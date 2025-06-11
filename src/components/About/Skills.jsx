@@ -91,7 +91,6 @@ function Skills() {
 
     return (
         <section className={styles.Container}>   
-            <h1 className={styles.Title}>Skills</h1>
             <section className={styles.Body}> 
                 <section className={styles.Left}>  
                     <p className={styles.Subtitle}>My Soft Skills:</p>
