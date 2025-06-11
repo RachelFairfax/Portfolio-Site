@@ -18,7 +18,7 @@ function About() {
     }, [location])
 
     return (
-    <div>
+    <div className={styles.PagePadding}>
         <h1 className={styles.Title}>About</h1>
         <section id="introduction" className={styles.Section}><Introduction /></section>
         <section id="skills" className={styles.Section}><Skills /></section>

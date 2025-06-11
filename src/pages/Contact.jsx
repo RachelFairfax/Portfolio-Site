@@ -5,6 +5,7 @@ import styles from '../components/Layout/Layout.module.css'
 
 function Contact() {
     return (
+        <div className={styles.PagePadding}>
         <div className={styles.ContactPage}>
         <h1>Contact Me</h1>
         <p>I'd love to hear from you! Feel free to reach out using the form or links below.</p>
@@ -46,6 +47,7 @@ function Contact() {
                 </a>
             </div>
             </div>
+        </div>
         </div>
         </div>
     );
