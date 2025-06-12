@@ -37,7 +37,7 @@ function Timeline() {
 
   return (
     <div className={styles.TimelineWrapper}>
-      <h1>My Programming Journey</h1>
+      <h1 className={styles.Title}>My Programming Journey</h1>
 
       <div className={styles.StageContainer}>
         <button onClick={prevStage} disabled={index === 0} className={`${styles.ArrowButton} ${index === 0 ? styles.Disabled : ''}`}>
@@ -57,9 +57,9 @@ function Timeline() {
               transition={{ duration: 0.1 }}
               whileHover={{ scale: 1.02 }}
             >
-              <h2>{stage.year}</h2>
-              <h3>{stage.title}</h3>
-              <p>{stage.description}</p>
+              <h2 className={styles.Year}>{stage.year}</h2>
+              <h3 className={styles.CardTitle}>{stage.title}</h3>
+              <p className={styles.Description}>{stage.description}</p>
               {stage.image && (
                 <img
                   src={stage.image}

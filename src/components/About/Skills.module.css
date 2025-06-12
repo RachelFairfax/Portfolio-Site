@@ -1,0 +1,91 @@
+
+.Body {
+    display: flex;
+}
+
+.Title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top:10px;
+    margin-bottom: 50px;
+}
+
+.Subtitle {
+    font-size: 20px;
+    padding-bottom: 1rem; 
+}
+
+.Left, .Right {
+    flex: 1;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    overflow-x: hidden;
+}
+
+.Left {
+    background-color: #629460;
+    color: white;
+}
+
+.Right {
+      background-color: #f4ece6;
+}
+
+.List {
+    padding-left: 1rem;
+}
+
+.Item {
+    padding-top: 0.5rem;
+    padding-left: 0rem;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.Item:hover {
+    transform: translateX(8px);
+}
+
+.ScrollingImages {
+    margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    /*Hiding scrollbar on various browsers*/
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ScrollingImages::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.LogosRow {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    min-width: max-content;
+}
+
+.Logo {
+    width: 170px;
+    height: auto;
+    transition: all 0.3s ease;
+    flex: 1;
+    object-fit: cover;
+    /*For faded effect when not selected*/
+    opacity: 1;
+    filter: none;
+}
+
+.Logo:hover {
+    transform: scale(1.1);
+}
+
+.Faded {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}

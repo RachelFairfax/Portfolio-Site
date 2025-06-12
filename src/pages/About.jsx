@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Introduction from '../components/About/Introduction';
 import Skills from '../components/About/Skills';
 import Timeline from '../components/About/Timeline/Timeline';
-import styles from '../components/Layout/Layout.module.css'
+import styles from '../components/Layout/Layout.module.css';
 
 function About() {
     const location = useLocation();
@@ -18,8 +18,7 @@ function About() {
     }, [location])
 
     return (
-    <div>
-        <h1 className={styles.Title}>About</h1>
+    <div className={styles.PagePadding}>
         <section id="introduction" className={styles.Section}><Introduction /></section>
         <section id="skills" className={styles.Section}><Skills /></section>
         <section id="timeline" className={styles.Section}><Timeline /></section>

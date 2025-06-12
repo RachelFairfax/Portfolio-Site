@@ -2,11 +2,11 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import styles from './App.module.css';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects/Projects';
 import Qualifications from './pages/Qualifications';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import './index.css';
 
 function App() {
