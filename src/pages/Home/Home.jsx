@@ -4,7 +4,7 @@ import styles from './HomePage.module.css';
 import { MdEmail } from "react-icons/md";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import profileImage from '../assets/ProfilePhoto.jpg';
+import profileImage from '../../assets/ProfilePhoto.jpg';
 
 const HomePage = () => {
   //Setting up routing for contact and projects buttons
