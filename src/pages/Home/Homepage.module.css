@@ -111,7 +111,6 @@
   display: flex;
   justify-content: center; /* horizontal centering */
   margin: 1.5rem auto;
-  gap: 2rem;
   flex-wrap: wrap;         /* allow wrap on smaller screens */
   width: fit-content;
 }

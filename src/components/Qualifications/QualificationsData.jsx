@@ -8,7 +8,7 @@ const qualificationsData = [
                 date: "August 2020",
                 skills: ["Language","Communication"],
                 grade: "8",
-                description: "Mr. Shobrook bla bla bla"
+                description: "Learnt to speak and write 150-word essays in German."
             },
             {
                 name: "French",
@@ -16,16 +16,15 @@ const qualificationsData = [
                 date: "August 2020",
                 skills: ["Language","Communication"],
                 grade: "8",  
-                description: "Homeschooled. Was hard."
+                description: "Learnt to speak and write 150-word essays in French."
             },
             {
                 name: "Geography",
                 from: "Stroud High School",
                 date: "August 2020",
-                skills: ["Literally no skills"],
+                skills: ["Presenting"],
                 grade: "7",
-                description: "Absolutely sucked. No other comments."
-                //plz change this
+                description: "Gave presentations on relevant issues such as fair trade. Wrote essays on aspects of human and physical geography."
             },
             {
                 name: "English Language",

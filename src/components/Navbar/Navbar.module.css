@@ -8,15 +8,24 @@
   z-index: 100;
   display: flex;
   justify-content: center;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
+.NavbarContent {
+  margin: 0 auto;
+  width: auto;
+  display: flex;
+  justify-content: space-between;  /* fixes centering issue */
+  align-items: center; 
+}
+
 
 /* Navbar list */
 .NavbarUl {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   align-items: center;
   gap: 1rem;
@@ -39,14 +48,13 @@
   display: inline-block; /* changed from inline-flex to inline-block */
   line-height: 1.2;       /* normalizes height */
   vertical-align: middle; /* aligns baseline */
-  position: relative;     /* required for ::after underline */
+  position: relative;
 }
 
 .NavIcon {
     margin-right: 0.5rem;
     vertical-align: middle;
     position:relative;
-    bottom: 2px;
 }
 
 /* Hover effect */
@@ -152,12 +160,12 @@
   .NavbarUl {
     display: none;
     flex-direction: column;
-    width: 250px;
+    width: 270px;
     background-color: white;
     border-right: 2px solid #e0e0e0;
     padding: 1rem 0;
     position: fixed;
-    top: 60px; /* or however tall your navbar header is */
+    top: 60px;
     left: 0;
     height: 100vh;
     z-index: 50;
