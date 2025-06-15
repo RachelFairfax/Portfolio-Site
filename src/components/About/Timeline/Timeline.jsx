@@ -47,7 +47,7 @@ function Timeline() {
         <div className={styles.StageCardWrapper}>
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
-              key={`${index}-${direction}`} // ensure full re-render
+              key={index} // ensure full re-render
               className={styles.StageCard}
               custom={direction}
               variants={variants}
